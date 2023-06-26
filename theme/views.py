@@ -9,3 +9,7 @@ class IndexView2(TemplateView):
 
 class IndexView3(TemplateView):
     template_name = 'mock/index3.html'
+
+
+class ErrorPage404View(TemplateView):
+    template_name = 'mock/404.html'
