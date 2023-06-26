@@ -11,5 +11,8 @@ class IndexView3(TemplateView):
     template_name = 'mock/index3.html'
 
 
-class ErrorPage404View(TemplateView):
-    template_name = 'mock/404.html'
+class ErrorPage400View(TemplateView):
+    template_name = 'mock/400.html'
+
+class ErrorPage403View(TemplateView):
+    template_name = 'mock/403.html'

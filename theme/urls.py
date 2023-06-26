@@ -9,5 +9,6 @@ urlpatterns = [
     path('index2', IndexView2.as_view(), name='index2'),
     path('index3', IndexView3.as_view(), name='index3'),
 
-    path('error_404', ErrorPage404View.as_view(), name='error_404')
+    path('error_400', ErrorPage400View.as_view(), name='error_400'),
+    path('error_403', ErrorPage403View.as_view(), name='error_403'),
 ]
