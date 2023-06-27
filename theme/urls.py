@@ -14,4 +14,12 @@ urlpatterns = [
     path('error_404', ErrorPage404View.as_view(), name='error_404'),
     path('error_500', ErrorPage500View.as_view(), name='error_500'),
     path('error_503', ErrorPage503View.as_view(), name='error_503'),
+
+    path('form_basic', FormBasicView.as_view(), name='form_basic'),
+    path('advanced_component', FormAdvanceComponentView.as_view(), name='advanced_component'),
+    path('form_wizard', FormWizardView.as_view(), name='form_wizard'),
+    path('html5_editor', FormHtml5EditorView.as_view(), name='html5_editor'),
+    path('form_pickers', FormPickersView.as_view(), name='form_pickers'),
+    path('image_cropper', FormImageCropperView.as_view(), name='image_cropper'),
+    path('image_dropzone', FormImageDropzoneView.as_view(), name='image_dropzone'),
 ]

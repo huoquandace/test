@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-
+from django.shortcuts import HttpResponse
 
 class IndexView(TemplateView):
     template_name = 'mock/dashboards/index.html'
@@ -25,3 +25,27 @@ class ErrorPage500View(TemplateView):
 
 class ErrorPage503View(TemplateView):
     template_name = 'mock/error_pages/503.html'
+
+class FormBasicView(TemplateView):
+    template_name = 'mock/forms/form-basic.html'
+
+class FormAdvanceComponentView(TemplateView):
+    template_name = 'mock/forms/advanced-components.html'
+
+class FormWizardView(TemplateView):
+    template_name = 'mock/forms/form-wizard.html'
+
+class FormHtml5EditorView(TemplateView):
+    template_name = 'mock/forms/html5-editor.html'
+
+class FormPickersView(TemplateView):
+    template_name = 'mock/forms/form-pickers.html'
+
+class FormImageCropperView(TemplateView):
+    template_name = 'mock/forms/image-cropper.html'
+    
+class FormImageDropzoneView(TemplateView):
+    template_name = 'mock/forms/image-dropzone.html'
+
+    def post(self, request, *args, **kwargs):
+        return HttpResponse('123123')
