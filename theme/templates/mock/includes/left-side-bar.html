@@ -43,12 +43,12 @@
             <span class="micon bi bi-table"></span><span class="mtext">Tables</span>
           </a>
           <ul class="submenu">
-            <li><a href="basic-table.html">Basic Tables</a></li>
-            <li><a href="datatable.html">DataTables</a></li>
+            <li><a href="{% url 'theme:basic_table' %}">Basic Tables</a></li>
+            <li><a href="{% url 'theme:datatable' %}">DataTables</a></li>
           </ul>
         </li>
         <li>
-          <a href="calendar.html" class="dropdown-toggle no-arrow">
+          <a href="{% url 'theme:calendar' %}" class="dropdown-toggle no-arrow">
             <span class="micon bi bi-calendar4-week"></span><span class="mtext">Calendar</span>
           </a>
         </li>

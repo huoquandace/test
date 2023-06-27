@@ -22,4 +22,10 @@ urlpatterns = [
     path('form_pickers', FormPickersView.as_view(), name='form_pickers'),
     path('image_cropper', FormImageCropperView.as_view(), name='image_cropper'),
     path('image_dropzone', FormImageDropzoneView.as_view(), name='image_dropzone'),
+
+    path('basic_table', TableBasicView.as_view(), name='basic_table'),
+    path('datatable', TableDataView.as_view(), name='datatable'),
+
+    path('calendar', CalendarView.as_view(), name='calendar'),
+
 ]

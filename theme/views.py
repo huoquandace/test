@@ -26,6 +26,7 @@ class ErrorPage500View(TemplateView):
 class ErrorPage503View(TemplateView):
     template_name = 'mock/error_pages/503.html'
 
+
 class FormBasicView(TemplateView):
     template_name = 'mock/forms/form-basic.html'
 
@@ -49,3 +50,14 @@ class FormImageDropzoneView(TemplateView):
 
     def post(self, request, *args, **kwargs):
         return HttpResponse('123123')
+    
+
+class TableBasicView(TemplateView):
+    template_name = 'mock/tables/basic-table.html'
+
+class TableDataView(TemplateView):
+    template_name = 'mock/tables/datatable.html'
+
+
+class CalendarView(TemplateView):
+    template_name = 'mock/calendar/calendar.html'
