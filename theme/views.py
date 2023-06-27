@@ -61,3 +61,47 @@ class TableDataView(TemplateView):
 
 class CalendarView(TemplateView):
     template_name = 'mock/calendar/calendar.html'
+
+
+class UIButtonsView(TemplateView):
+    template_name = 'mock/ui_elements/ui-buttons.html'
+
+class UICardsView(TemplateView):
+    template_name = 'mock/ui_elements/ui-cards.html'
+
+class UICardsHoverView(TemplateView):
+    template_name = 'mock/ui_elements/ui-cards-hover.html'
+
+class UIModalsView(TemplateView):
+    template_name = 'mock/ui_elements/ui-modals.html'
+
+class UITabsView(TemplateView):
+    template_name = 'mock/ui_elements/ui-tabs.html'
+
+class UITooltipPopoverView(TemplateView):
+    template_name = 'mock/ui_elements/ui-tooltip-popover.html'
+
+class UISweetAlertView(TemplateView):
+    template_name = 'mock/ui_elements/ui-sweet-alert.html'
+
+class UINotificationView(TemplateView):
+    template_name = 'mock/ui_elements/ui-notification.html'
+
+class UITimelineView(TemplateView):
+    template_name = 'mock/ui_elements/ui-timeline.html'
+
+class UIProgressbarView(TemplateView):
+    template_name = 'mock/ui_elements/ui-progressbar.html'
+
+class UITypographyView(TemplateView):
+    template_name = 'mock/ui_elements/ui-typography.html'
+
+class UIListGroupView(TemplateView):
+    template_name = 'mock/ui_elements/ui-list-group.html'
+
+class UIRangeSliderView(TemplateView):
+    template_name = 'mock/ui_elements/ui-range-slider.html'
+
+class UICarouselView(TemplateView):
+    template_name = 'mock/ui_elements/ui-carousel.html'
+

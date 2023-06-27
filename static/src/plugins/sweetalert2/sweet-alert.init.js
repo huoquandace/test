@@ -114,7 +114,7 @@
             swal({
                 title: 'Sweet!',
                 text: 'Modal with a custom image.',
-                imageUrl: 'vendors/images/deskapp-color-logo.png',
+                imageUrl: '../static/vendors/images/deskapp-color-logo.png',
                 imageHeight: 30,
                 animation: false
             })
@@ -161,7 +161,7 @@
                 title: 'Custom width, padding, background.',
                 width: 600,
                 padding: 100,
-                background: '#fff url(vendors/images/img1.jpg)'
+                background: '#fff url(../static/vendors/images/img1.jpg)'
             })
         });
 

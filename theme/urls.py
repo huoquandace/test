@@ -28,4 +28,18 @@ urlpatterns = [
 
     path('calendar', CalendarView.as_view(), name='calendar'),
 
+    path('ui_buttons', UIButtonsView.as_view(), name='ui_buttons'),
+    path('ui_cards', UICardsView.as_view(), name='ui_cards'),
+    path('ui_cards_hover', UICardsHoverView.as_view(), name='ui_cards_hover'),
+    path('ui_modals', UIModalsView.as_view(), name='ui_modals'),
+    path('ui_tabs', UITabsView.as_view(), name='ui_tabs'),
+    path('ui_tooltip_popover', UITooltipPopoverView.as_view(), name='ui_tooltip_popover'),
+    path('ui_sweet_alert', UISweetAlertView.as_view(), name='ui_sweet_alert'),
+    path('ui_notification', UINotificationView.as_view(), name='ui_notification'),
+    path('ui_timeline', UITimelineView.as_view(), name='ui_timeline'),
+    path('ui_progressbar', UIProgressbarView.as_view(), name='ui_progressbar'),
+    path('ui_typography', UITypographyView.as_view(), name='ui_typography'),
+    path('ui_list_group', UIListGroupView.as_view(), name='ui_list_group'),
+    path('ui_range_slider', UIRangeSliderView.as_view(), name='ui_range_slider'),
+    path('ui_carousel', UICarouselView.as_view(), name='ui_carousel'),
 ]
