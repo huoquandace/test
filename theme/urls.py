@@ -11,4 +11,7 @@ urlpatterns = [
 
     path('error_400', ErrorPage400View.as_view(), name='error_400'),
     path('error_403', ErrorPage403View.as_view(), name='error_403'),
+    path('error_404', ErrorPage404View.as_view(), name='error_404'),
+    path('error_500', ErrorPage500View.as_view(), name='error_500'),
+    path('error_503', ErrorPage503View.as_view(), name='error_503'),
 ]
