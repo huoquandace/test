@@ -124,3 +124,16 @@ class IconThemifyView(TemplateView):
 class IconCustomView(TemplateView):
     template_name = 'mock/icons/custom-icon.html'
 
+
+class HighchartView(TemplateView):
+    template_name = 'mock/charts/highchart.html'
+
+class KnobchartView(TemplateView):
+    template_name = 'mock/charts/knob-chart.html'
+
+class JvectormapView(TemplateView):
+    template_name = 'mock/charts/jvectormap.html'
+
+class ApexchartView(TemplateView):
+    template_name = 'mock/charts/apexcharts.html'
+

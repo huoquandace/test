@@ -43,11 +43,15 @@ urlpatterns = [
     path('ui_range_slider', UIRangeSliderView.as_view(), name='ui_range_slider'),
     path('ui_carousel', UICarouselView.as_view(), name='ui_carousel'),
 
-
     path('icon_bootstrap', IconBootstrapView.as_view(), name='icon_bootstrap'),
     path('icon_font_awesome', IconFontAwesomeView.as_view(), name='icon_font_awesome'),
     path('icon_foundation', IconFoundationView.as_view(), name='icon_foundation'),
     path('icon_ionicons', IconIoniconsView.as_view(), name='icon_ionicons'),
     path('icon_themify', IconThemifyView.as_view(), name='icon_themify'),
     path('icon_custom', IconCustomView.as_view(), name='icon_custom'),
+
+    path('highchart', HighchartView.as_view(), name='highchart'),
+    path('knobchart', KnobchartView.as_view(), name='knobchart'),
+    path('jvectormap', JvectormapView.as_view(), name='jvectormap'),
+    path('apexchart', ApexchartView.as_view(), name='apexchart'),
 ]
