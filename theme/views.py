@@ -105,3 +105,22 @@ class UIRangeSliderView(TemplateView):
 class UICarouselView(TemplateView):
     template_name = 'mock/ui_elements/ui-carousel.html'
 
+
+class IconBootstrapView(TemplateView):
+    template_name = 'mock/icons/bootstrap-icon.html'
+
+class IconFontAwesomeView(TemplateView):
+    template_name = 'mock/icons/font-awesome.html'
+
+class IconFoundationView(TemplateView):
+    template_name = 'mock/icons/foundation.html'
+
+class IconIoniconsView(TemplateView):
+    template_name = 'mock/icons/ionicons.html'
+
+class IconThemifyView(TemplateView):
+    template_name = 'mock/icons/themify.html'
+
+class IconCustomView(TemplateView):
+    template_name = 'mock/icons/custom-icon.html'
+
