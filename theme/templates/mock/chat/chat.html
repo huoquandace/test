@@ -1,7 +1,23 @@
+{% extends 'mock/layouts/base.html' %}
+{% load static %}
+
+{% block 'title' %} Chat {% endblock 'title' %}
 
 
+{% block 'css' %}
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/core.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/icon-font.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/style.css' %}" />
+{% endblock 'css' %}
 
+{% block 'script' %}
+<script src="{% static 'vendors/scripts/core.js' %}"></script>
+<script src="{% static 'vendors/scripts/script.min.js' %}"></script>
+<script src="{% static 'vendors/scripts/process.js' %}"></script>
+<script src="{% static 'vendors/scripts/layout-settings.js' %}"></script>
+{% endblock 'script' %}
 
+{% block 'content' %}
 <div class="pd-ltr-20 xs-pd-20-10">
 	<div class="min-height-200px">
 		<div class="page-header">
@@ -13,7 +29,7 @@
 					<nav aria-label="breadcrumb" role="navigation">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
-								<a href="index.html">Home</a>
+								<a href="{% url 'theme:index' %}">Home</a>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
 								Chat
@@ -35,7 +51,7 @@
 							<ul>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-green"></i> online
@@ -44,7 +60,7 @@
 								</li>
 								<li class="active">
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-green"></i> online
@@ -53,7 +69,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-green"></i> online
@@ -62,7 +78,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-warning"></i> active 5
@@ -72,7 +88,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-warning"></i> active 4
@@ -82,7 +98,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-warning"></i> active 3
@@ -92,7 +108,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -102,7 +118,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -112,7 +128,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -122,7 +138,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -132,7 +148,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -142,7 +158,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="" />
+										<img src="{% static 'vendors/images/img.jpg' %}" alt="" />
 										<h3 class="clearfix">John Doe</h3>
 										<p>
 											<i class="fa fa-circle text-light-orange"></i>
@@ -160,7 +176,7 @@
 							<div class="left">
 								<div class="clearfix">
 									<div class="chat-profile-photo">
-										<img src="vendors/images/profile-photo.jpg" alt="" />
+										<img src="{% static 'vendors/images/profile-photo.jpg' %}" alt="" />
 									</div>
 									<div class="chat-profile-name">
 										<h3>Rachel Curtis</h3>
@@ -186,7 +202,7 @@
 								<ul>
 									<li class="clearfix admin_chat">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img2.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img2.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>Maybe you already have additional info?</p>
@@ -195,7 +211,7 @@
 									</li>
 									<li class="clearfix admin_chat">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img2.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img2.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -207,7 +223,7 @@
 									</li>
 									<li class="clearfix">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img1.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img1.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -221,7 +237,7 @@
 									</li>
 									<li class="clearfix">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img1.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img1.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -247,7 +263,7 @@
 									</li>
 									<li class="clearfix admin_chat">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img2.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img2.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>Maybe you already have additional info?</p>
@@ -256,7 +272,7 @@
 									</li>
 									<li class="clearfix admin_chat">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img2.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img2.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -268,7 +284,7 @@
 									</li>
 									<li class="clearfix">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img1.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img1.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -282,7 +298,7 @@
 									</li>
 									<li class="clearfix">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img1.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img1.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<p>
@@ -308,12 +324,12 @@
 									</li>
 									<li class="clearfix upload-file">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img1.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img1.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<div class="upload-file-box clearfix">
 												<div class="left">
-													<img src="vendors/images/upload-file-img.jpg" alt="" />
+													<img src="{% static 'vendors/images/upload-file-img.jpg' %}" alt="" />
 													<div class="overlay">
 														<a href="#">
 															<span><i class="fa fa-angle-down"></i></span>
@@ -330,12 +346,12 @@
 									</li>
 									<li class="clearfix upload-file admin_chat">
 										<span class="chat-img">
-											<img src="vendors/images/chat-img2.jpg" alt="" />
+											<img src="{% static 'vendors/images/chat-img2.jpg' %}" alt="" />
 										</span>
 										<div class="chat-body clearfix">
 											<div class="upload-file-box clearfix">
 												<div class="left">
-													<img src="vendors/images/upload-file-img.jpg" alt="" />
+													<img src="{% static 'vendors/images/upload-file-img.jpg' %}" alt="" />
 													<div class="overlay">
 														<a href="#">
 															<span><i class="fa fa-angle-down"></i></span>
@@ -376,3 +392,5 @@
 		<a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 	</div>
 </div>
+{% endblock 'content' %}
+

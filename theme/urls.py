@@ -54,4 +54,6 @@ urlpatterns = [
     path('knobchart', KnobchartView.as_view(), name='knobchart'),
     path('jvectormap', JvectormapView.as_view(), name='jvectormap'),
     path('apexchart', ApexchartView.as_view(), name='apexchart'),
+
+    path('chat', ChatView.as_view(), name='chat'),
 ]

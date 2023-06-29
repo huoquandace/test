@@ -137,3 +137,7 @@ class JvectormapView(TemplateView):
 class ApexchartView(TemplateView):
     template_name = 'mock/charts/apexcharts.html'
 
+
+class ChatView(TemplateView):
+    template_name = 'mock/chat/chat.html'
+
