@@ -1,6 +1,23 @@
+{% extends 'mock/layouts/base.html' %}
+{% load static %}
+
+{% block 'title' %} Color Settings {% endblock 'title' %}
 
 
+{% block 'css' %}
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/core.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/icon-font.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/style.css' %}" />
+{% endblock 'css' %}
 
+{% block 'script' %}
+<script src="{% static 'vendors/scripts/core.js' %}"></script>
+<script src="{% static 'vendors/scripts/script.min.js' %}"></script>
+<script src="{% static 'vendors/scripts/process.js' %}"></script>
+<script src="{% static 'vendors/scripts/layout-settings.js' %}"></script>
+{% endblock 'script' %}
+
+{% block 'content' %}
 <div class="pd-ltr-20 xs-pd-20-10">
 	<div class="min-height-200px">
 		<div class="page-header">
@@ -12,7 +29,7 @@
 					<nav aria-label="breadcrumb" role="navigation">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
-								<a href="index.html">Home</a>
+								<a href="{% url 'theme:index' %}">Home</a>
 							</li>
 							<li class="breadcrumb-item">
 								<a href="javascript:;">Documentation</a>
@@ -29,10 +46,10 @@
 							Menu
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="introduction.html">Introduction</a>
-							<a class="dropdown-item" href="getting-started.html">Getting Started</a>
-							<a class="dropdown-item active" href="color-settings.html">Color Settings</a>
-							<a class="dropdown-item" href="third-party-plugins.html">Third Party Plugins</a>
+							<a class="dropdown-item" href="{% url 'theme:introduction' %}">Introduction</a>
+							<a class="dropdown-item" href="{% url 'theme:getting_started' %}">Getting Started</a>
+							<a class="dropdown-item active" href="{% url 'theme:color_settings' %}">Color Settings</a>
+							<a class="dropdown-item" href="{% url 'theme:third_party_plugins' %}">Third Party Plugins</a>
 						</div>
 					</div>
 				</div>
@@ -46,7 +63,7 @@
 				<div class="col-md-5">
 					<p>Default sidebar color is dark</p>
 					<p>
-						<img src="vendors/images/layout/sidebar-dark.png" class="box-shadow" alt="" />
+						<img src="{% static 'vendors/images/layout/sidebar-dark.png' %}" class="box-shadow" alt="" />
 					</p>
 				</div>
 				<div class="col-md-7">
@@ -55,7 +72,7 @@
 						<code>body class="sidebar-light"</code>
 					</p>
 					<p>
-						<img src="vendors/images/layout/sidebar-white.png" class="box-shadow" alt="" />
+						<img src="{% static 'vendors/images/layout/sidebar-white.png' %}" class="box-shadow" alt="" />
 					</p>
 				</div>
 			</div>
@@ -68,7 +85,7 @@
 				<div class="col-md-12 mb-20">
 					<p>Default header color is white</p>
 					<p>
-						<img src="vendors/images/layout/header-white.png" class="box-shadow" alt="" />
+						<img src="{% static 'vendors/images/layout/header-white.png' %}" class="box-shadow" alt="" />
 					</p>
 				</div>
 				<div class="col-md-12">
@@ -77,7 +94,7 @@
 						<code>body class="header-dark"</code>
 					</p>
 					<p>
-						<img src="vendors/images/layout/header-dark.png" class="box-shadow" alt="" />
+						<img src="{% static 'vendors/images/layout/header-dark.png' %}" class="box-shadow" alt="" />
 					</p>
 				</div>
 			</div>
@@ -158,3 +175,7 @@
 		<a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 	</div>
 </div>
+{% endblock 'content' %}
+
+
+

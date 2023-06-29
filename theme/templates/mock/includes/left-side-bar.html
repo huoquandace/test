@@ -102,10 +102,10 @@
             <span class="micon bi bi-file-earmark-text"></span><span class="mtext">Additional Pages</span>
           </a>
           <ul class="submenu">
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="forgot-password.html">Forgot Password</a></li>
-            <li><a href="reset-password.html">Reset Password</a></li>
+            <li><a href="{% url 'theme:login' %}">Login</a></li>
+            <li><a href="{% url 'theme:register' %}">Register</a></li>
+            <li><a href="{% url 'theme:forgot_password' %}">Forgot Password</a></li>
+            <li><a href="{% url 'theme:reset_password' %}">Reset Password</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -162,7 +162,7 @@
           </ul>
         </li>
         <li>
-          <a href="sitemap.html" class="dropdown-toggle no-arrow">
+          <a href="{% url 'theme:sitemap' %}" class="dropdown-toggle no-arrow">
             <span class="micon bi bi-diagram-3"></span><span class="mtext">Sitemap</span>
           </a>
         </li>
@@ -172,7 +172,7 @@
           </a>
         </li>
         <li>
-          <a href="invoice.html" class="dropdown-toggle no-arrow">
+          <a href="{% url 'theme:invoice' %}" class="dropdown-toggle no-arrow">
             <span class="micon bi bi-receipt-cutoff"></span><span class="mtext">Invoice</span>
           </a>
         </li>
@@ -187,12 +187,10 @@
             <span class="micon bi bi-file-pdf"></span><span class="mtext">Documentation</span>
           </a>
           <ul class="submenu">
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="color-settings.html">Color Settings</a></li>
-            <li>
-              <a href="third-party-plugins.html">Third Party Plugins</a>
-            </li>
+            <li><a href="{% url 'theme:introduction' %}">Introduction</a></li>
+            <li><a href="{% url 'theme:getting_started' %}">Getting Started</a></li>
+            <li><a href="{% url 'theme:color_settings' %}">Color Settings</a></li>
+            <li><a href="{% url 'theme:third_party_plugins' %}">Third Party Plugins</a></li>
           </ul>
         </li>
         <li>

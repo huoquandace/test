@@ -56,4 +56,18 @@ urlpatterns = [
     path('apexchart', ApexchartView.as_view(), name='apexchart'),
 
     path('chat', ChatView.as_view(), name='chat'),
+
+    path('invoice', InvoiceView.as_view(), name='invoice'),
+
+    path('sitemap', SitemapView.as_view(), name='sitemap'),
+
+    path('introduction', IntroductionView.as_view(), name='introduction'),
+    path('getting_started', GettingStartedView.as_view(), name='getting_started'),
+    path('color_settings', ColorSettingsView.as_view(), name='color_settings'),
+    path('third_party_plugins', ThirdPartyPluginsView.as_view(), name='third_party_plugins'),
+
+    path('login', LoginView.as_view(), name='login'),
+    path('register', RegisterView.as_view(), name='register'),
+    path('forgot_password', ForgotPasswordView.as_view(), name='forgot_password'),
+    path('reset_password', ResetPasswordView.as_view(), name='reset_password'),
 ]

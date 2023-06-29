@@ -1,0 +1,203 @@
+{% extends 'mock/layouts/base.html' %}
+{% load static %}
+
+{% block 'title' %} Sitemap {% endblock 'title' %}
+
+
+{% block 'css' %}
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/core.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/icon-font.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/styles/style.css' %}" />
+{% endblock 'css' %}
+
+{% block 'script' %}
+<script src="{% static 'vendors/scripts/core.js' %}"></script>
+<script src="{% static 'vendors/scripts/script.min.js' %}"></script>
+<script src="{% static 'vendors/scripts/process.js' %}"></script>
+<script src="{% static 'vendors/scripts/layout-settings.js' %}"></script>
+{% endblock 'script' %}
+
+{% block 'content' %}
+<div class="pd-ltr-20 xs-pd-20-10">
+	<div class="min-height-200px">
+		<div class="page-header">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="title">
+						<h4>Sitemap</h4>
+					</div>
+					<nav aria-label="breadcrumb" role="navigation">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="{% url 'theme:index' %}">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">
+								Sitemap
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="mb-30">
+			<div class="pb-20">
+				<div class="row">
+					<div class="col-lg-2 col-md-6 col-sm-12">
+						<div class="sitemap">
+							<h5 class="h5">Home</h5>
+							<ul>
+								<li><a href="{% url 'theme:index' %}">Dashboard style 1</a></li>
+								<li><a href="{% url 'theme:index2' %}">Dashboard style 2</a></li>
+								<li><a href="{% url 'theme:index3' %}">Dashboard style 3</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Forms</h5>
+							<ul>
+								<li><a href="{% url 'theme:form_basic' %}">Form Basic</a></li>
+								<li><a href="{% url 'theme:advanced_component' %}">Advanced Components</a></li>
+								<li><a href="{% url 'theme:form_wizard' %}">Form Wizard</a></li>
+								<li><a href="{% url 'theme:html5_editor' %}">HTML5 Editor</a></li>
+								<li><a href="{% url 'theme:form_pickers' %}">Form Pickers</a></li>
+								<li><a href="{% url 'theme:image_cropper' %}">Image Cropper</a></li>
+								<li><a href="{% url 'theme:image_dropzone' %}">Image Dropzone</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Calendar</h5>
+							<ul>
+								<li><a href="{% url 'theme:calendar' %}">Calendar</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Invoice</h5>
+							<ul>
+								<li><a href="{% url 'theme:invoice' %}">Invoice</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Chat Module</h5>
+							<ul>
+								<li><a href="{% url 'theme:chat' %}">Chat</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-12">
+						<div class="sitemap">
+							<h5 class="h5">Icons</h5>
+							<ul>
+								<li><a href="{% url 'theme:icon_bootstrap' %}">Bootstrap Icons</a></li>
+								<li><a href="{% url 'theme:icon_font_awesome' %}">FontAwesome Icons</a></li>
+								<li><a href="{% url 'theme:icon_foundation' %}">Foundation Icons</a></li>
+								<li><a href="{% url 'theme:icon_ionicons' %}">Ionicons Icons</a></li>
+								<li><a href="{% url 'theme:icon_themify' %}">Themify Icons</a></li>
+								<li><a href="{% url 'theme:icon_custom' %}">Custom Icons</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Charts</h5>
+							<ul>
+								<li><a href="{% url 'theme:highchart' %}">Highchart</a></li>
+								<li><a href="{% url 'theme:knobchart' %}">jQuery Knob</a></li>
+								<li><a href="{% url 'theme:jvectormap' %}">jvectormap</a></li>
+								<li><a href="{% url 'theme:apexchart' %}">Apexchart</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Error Pages</h5>
+							<ul>
+								<li><a href="{% url 'theme:error_400' %}">400</a></li>
+								<li><a href="{% url 'theme:error_403' %}">403</a></li>
+								<li><a href="{% url 'theme:error_404' %}">404</a></li>
+								<li><a href="{% url 'theme:error_500' %}">500</a></li>
+								<li><a href="{% url 'theme:error_503' %}">503</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-12">
+						<div class="sitemap">
+							<h5 class="h5">Tables</h5>
+							<ul>
+								<li><a href="{% url 'theme:basic_table' %}">Basic Tables</a></li>
+								<li><a href="{% url 'theme:datatable' %}">DataTables</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">UI Elements</h5>
+							<ul>
+								<li><a href="{% url 'theme:ui_buttons' %}">Buttons</a></li>
+								<li><a href="{% url 'theme:ui_cards' %}">Cards</a></li>
+								<li><a href="{% url 'theme:ui_cards_hover' %}">Cards Hover</a></li>
+								<li><a href="{% url 'theme:ui_modals' %}">Modals</a></li>
+								<li><a href="{% url 'theme:ui_tabs' %}">Tabs</a></li>
+								<li><a href="{% url 'theme:ui_tooltip_popover' %}">Tooltip &amp; Popover</a></li>
+								<li><a href="{% url 'theme:ui_sweet_alert' %}">Sweet Alert</a></li>
+								<li><a href="{% url 'theme:ui_notification' %}">Notification</a></li>
+								<li><a href="{% url 'theme:ui_timeline' %}">Timeline</a></li>
+								<li><a href="{% url 'theme:ui_progressbar' %}">Progressbar</a></li>
+								<li><a href="{% url 'theme:ui_typography' %}">Typography</a></li>
+								<li><a href="{% url 'theme:ui_list_group' %}">List group</a></li>
+								<li><a href="{% url 'theme:ui_range_slider' %}">Range slider</a></li>
+								<li><a href="{% url 'theme:ui_carousel' %}">Carousel</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-12">
+						<div class="sitemap">
+							<h5 class="h5">Additional Pages</h5>
+							<ul>
+								<li><a href="{% url 'theme:index' %}">Login</a></li>
+								<li><a href="{% url 'theme:index' %}">Reigster</a></li>
+								<li><a href="{% url 'theme:index' %}">Forgot Password</a></li>
+								<li><a href="{% url 'theme:index' %}">Reset Password</a></li>
+							</ul>
+						</div>
+						<div class="sitemap">
+							<h5 class="h5">Extra Pages</h5>
+							<ul>
+								<li><a href="{% url 'theme:index' %}">Blank</a></li>
+								<li><a href="{% url 'theme:index' %}">Contact Directory</a></li>
+								<li><a href="{% url 'theme:index' %}">Blog</a></li>
+								<li><a href="{% url 'theme:index' %}">Blog Detail</a></li>
+								<li><a href="{% url 'theme:index' %}">Product</a></li>
+								<li><a href="{% url 'theme:index' %}">Product Detail</a></li>
+								<li><a href="{% url 'theme:index' %}">FAQ</a></li>
+								<li><a href="{% url 'theme:index' %}">Profile</a></li>
+								<li><a href="{% url 'theme:index' %}">Gallery</a></li>
+								<li><a href="{% url 'theme:index' %}">Pricing Tables</a></li>
+								<li><a href="{% url 'theme:index' %}">Video Player</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-12">
+						<div class="sitemap">
+							<h5 class="h5">Multi Level Sitemap</h5>
+							<ul>
+								<li><a href="#">Level 1</a></li>
+								<li><a href="#">Level 1</a></li>
+								<li class="child">
+									<h5 class="h5">Level 2</h5>
+									<ul>
+										<li><a href="#">Level 2</a></li>
+										<li><a href="#">Level 2</a></li>
+										<li class="child">
+											<h5 class="h5">Level 3</h5>
+											<ul>
+												<li><a href="#">Level 3</a></li>
+												<li><a href="#">Level 3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-wrap pd-20 mb-20 card-box">
+		DeskApp - Bootstrap 4 Admin Template By
+		<a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
+	</div>
+</div>
+{% endblock 'content' %}

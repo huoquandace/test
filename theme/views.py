@@ -141,3 +141,35 @@ class ApexchartView(TemplateView):
 class ChatView(TemplateView):
     template_name = 'mock/chat/chat.html'
 
+
+class InvoiceView(TemplateView):
+    template_name = 'mock/invoice/invoice.html'
+
+class SitemapView(TemplateView):
+    template_name = 'mock/sitemap/sitemap.html'
+
+
+class IntroductionView(TemplateView):
+    template_name = 'mock/documentation/introduction.html'
+
+class GettingStartedView(TemplateView):
+    template_name = 'mock/documentation/getting-started.html'
+
+class ColorSettingsView(TemplateView):
+    template_name = 'mock/documentation/color-settings.html'
+
+class ThirdPartyPluginsView(TemplateView):
+    template_name = 'mock/documentation/third-party-plugins.html'
+
+
+class LoginView(TemplateView):
+    template_name = 'mock/additional_pages/login.html'
+
+class RegisterView(TemplateView):
+    template_name = 'mock/additional_pages/register.html'
+
+class ForgotPasswordView(TemplateView):
+    template_name = 'mock/additional_pages/forgot-password.html'
+
+class ResetPasswordView(TemplateView):
+    template_name = 'mock/additional_pages/reset-password.html'
