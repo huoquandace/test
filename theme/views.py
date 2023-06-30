@@ -148,6 +148,9 @@ class InvoiceView(TemplateView):
 class SitemapView(TemplateView):
     template_name = 'mock/sitemap/sitemap.html'
 
+class CommingSoonView(TemplateView):
+    template_name = 'mock/comming_soon.html'
+
 
 class IntroductionView(TemplateView):
     template_name = 'mock/documentation/introduction.html'

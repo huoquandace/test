@@ -60,6 +60,8 @@ urlpatterns = [
     path('invoice', InvoiceView.as_view(), name='invoice'),
 
     path('sitemap', SitemapView.as_view(), name='sitemap'),
+    
+    path('comming_soon', CommingSoonView.as_view(), name='comming_soon'),
 
     path('introduction', IntroductionView.as_view(), name='introduction'),
     path('getting_started', GettingStartedView.as_view(), name='getting_started'),
